@@ -1,0 +1,163 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    align-items: center;
+    justify-content: center;
+    background-size: 100% 100%;
+    background-image: linear-gradient(
+          -45deg, 
+          rgba(59,173,227,1) 0%, 
+          rgba(87,111,230,1) 25%, 
+          rgba(152,68,183,1) 51%, 
+          rgba(255,53,127,1) 100%
+    );  
+    animation: AnimateBG 20s ease infinite;
+  }
+  
+  @keyframes AnimateBG { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
+  
+html {
+    box-sizing: border-box;
+}
+  
+*, *:before, *:after {
+ box-sizing: inherit;
+}
+  
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+  
+.card {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+    background-color:rgb(0, 0, 0);
+    color: white;
+    border-radius: 5px;
+    
+}
+  
+.about-section {
+    padding: 30px;
+    margin: 60px;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-align: center;
+    /*background-image:url('Instagram.jpEg');*/
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    
+}
+  
+.container {
+    padding: 0 16px;
+}
+  
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+.title {
+    color: white;
+}
+  
+.btn {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #ff8800;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+ }
+  
+.btn:hover {
+    background-color: #555;
+}
+  
+ @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+}
+
+.btn {
+    background-color: #000000
+    ;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+  
+  /* Darker background on mouse-over */
+.btn:hover {
+    background-color: RoyalBlue;
+}
+  
+.home {
+    display: inline-block;
+    padding: 10px 18px;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color:orange;
+    border: none;
+    border-radius: 5px;
+}
+  
+.home:hover {background-color: gray}
+  
+.home:active {
+    background-color: #fda502;
+    transform: translateY(4px);
+}
+  
+.button {
+    display: inline-block;
+    padding: 10px 18px;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color:orange;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 6px rgb(238, 10, 181);
+}
+  
+.button:hover {background-color: gray}
+  
+.button:active {
+    background-color: #fda502;
+    transform: translateY(4px);
+}
+
+  /*I will try to answer your questions as much as possible*/
+.qoute{
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+

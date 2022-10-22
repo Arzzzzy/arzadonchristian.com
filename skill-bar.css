@@ -1,0 +1,101 @@
+*{
+    font-family: 'Montserrat';
+    list-style: none;
+    padding: 0;
+}
+body{
+    background: #333;
+}
+.skills{
+    width: 500px;
+    margin: 0%;
+    padding: 0%;
+    color: white;
+}
+.skills li{
+    margin: 20px 0;
+}
+.bar{
+    background: #353b48;
+    display: block;
+    height: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #2187e7b3;
+}
+.bar span{
+    height: 12px;
+    float: left;
+    background: hsl(39, 97%, 46%) ;
+}
+.gaming{
+    width: 100%;
+    animation: gaming 10s;
+}
+.adobe{
+    width: 65%;
+    animation: adobe 10s;
+}
+.web{
+    width: 50%;
+    animation: web 10s;
+}
+.programming{
+    width: 35%;
+    animation: programming 10s;
+}
+
+@keyframes gaming {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@keyframes adobe {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 65%;
+    }
+}
+@keyframes web {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+@keyframes programming {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 35%;
+    }
+}
+
+.home {
+    display: inline-block;
+    padding: 10px 18px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: gray;
+    border: none;
+    border-radius: 15px;
+}
+  
+.home:hover {background-color: orange}
+  
+.home:active {
+    background-color: black;
+    transform: translateY(4px);
+}
