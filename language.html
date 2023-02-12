@@ -1,9 +1,63 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <h1>Coming Soon..........</h1>
-        <p>masado nak mangituloy ahahahaah</p>
-
-
-    </head>
+  <head>
+    <title>arzzwiki.com</title>
+    <link rel="stylesheet" href="language.css">
+  </head>
+  <body>
+    <header>
+      <h1>Arzz Wiki</h1>
+      <h5>NO CONTENT YET LOL</h5>
+    </header>
+    <!-- Add a header to the page -->
+    <h1>Guess the Number</h1>
+    <!-- Add the form for the game -->
+    <form>
+      <label for="guess">Enter a number between 1 and 100:</label>
+      <input type="text" id="guess" name="guess">
+      <input type="submit" value="Guess">
+    </form>
+    <!-- Add a place to display the result -->
+    <div class="result"></div>
+    <!-- Add some JavaScript to make the game work -->
+    <script>
+      const form = document.querySelector("form");
+      const result = document.querySelector(".result");
+      const numberToGuess = Math.floor(Math.random() * 100) + 1;
+      form.addEventListener("submit", function(event) {
+        event.preventDefault();
+        const guess = Number(form.elements.guess.value);
+        if (guess === numberToGuess) {
+          result.textContent = "You got it! The number was " + numberToGuess + ".";
+        } else if (guess < numberToGuess) {
+          result.textContent = "Too low. Try again.";
+        } else {
+          result.textContent = "Too high. Try again.";
+        }
+      });
+    </script>
+ <!--  <main>
+      <nav>
+        <ul>
+          <li><a href="#html">HTML</a></li>
+          <li><a href="#css">CSS</a></li>
+          <li><a href="#javascript">JavaScript</a></li>
+        </ul>
+      </nav>
+      <article>
+        <section id="html">
+          <h2>HTML</h2>
+          <p>HTML (Hypertext Markup Language) is the standard markup language for creating web pages.</p>
+        </section>
+        <section id="css">
+          <h2>CSS</h2>
+          <p>CSS (Cascading Style Sheets) is used to style and layout web pages.</p>
+        </section>
+        <section id="javascript">
+          <h2>JavaScript</h2>
+          <p>JavaScript is a scripting language used to make web pages interactive.</p>
+        </section>
+      </article>
+    </main> --> 
+  </body>
 </html>
